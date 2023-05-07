@@ -1,11 +1,9 @@
-ENTRY(start)
+ENTRY(_start)
 
 SECTIONS {
-
-    . = 1M;
-    .text :
-    {
-        *(.multiboot)
-        *(.text)
-    }
+	. = 1M;
+	.text : {
+		*(.multiboot);
+		*(.text);
+	}
 }
