@@ -33,10 +33,9 @@ void printchar(char str, u8 color){
 }
 
 void _sleep(u32 ms){
-	while(1){
-		asm volatile("nop");
-		ms--;
-		if(ms <= 0)
-			break;
-	}
+	typedef unsigned long ul32;
+
+	ul32 real_ms = ms * 100000;
+	for(ul32 i = 0; i < real_ms; i++)
+		asm volatile("NOP ");
 }

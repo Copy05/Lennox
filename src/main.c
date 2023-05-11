@@ -4,12 +4,11 @@
 #include "drivers/keyboard/keyboard.h"
 
 int main(){
-
 	cls();
-	printt("Loading Lennox v1.0 x86_64", WHITE);
-	_sleep(12000000);
+	printt("Loading Lennox 1.0 x86_64", WHITE);
 	newline();
-	printt("Loaded", BRIGHT_BLUE);
+	_sleep(2000);
+	printt("Loaded", BRIGHT_GREEN);
 	newline();
 	keyboard_handler();
 	return 0;

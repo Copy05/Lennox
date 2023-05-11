@@ -26,3 +26,6 @@ grub-mkrescue -o Lennox.iso iso/
 rm -rf build
 rm -rf iso
 rm Lennox.bin
+
+# Start the OS
+qemu-system-x86_64 -cdrom Lennox.iso
