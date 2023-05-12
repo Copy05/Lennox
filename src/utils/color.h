@@ -1,5 +1,9 @@
-// VGA Color Codes
-
+/*
+*
+* color.h | VGA Color Codes for the terminal
+* (c) The Lennox Project & Copy05 2023
+*
+*/
 
 // 16 Colors
 enum vga_color {
@@ -20,3 +24,5 @@ enum vga_color {
     YELLOW,
     WHITE,
 };
+
+void displayAllColors();

@@ -1,3 +1,11 @@
+/*
+*
+* Keyboard.h | The Keyboard Driver
+* (c) The Lennox Project & Copy05 2023
+*
+*/
+
+
 #define KEYBOARD_PORT 0x60
 
 #define KEY_A 0x1E

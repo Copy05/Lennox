@@ -1,3 +1,10 @@
+/*
+*
+* terminal.h | Terminal output
+* (c) The Lennox Project & Copy05 2023
+*
+*/
+
 #include "terminal.h"
 #include "../std/stdlib.h"
 

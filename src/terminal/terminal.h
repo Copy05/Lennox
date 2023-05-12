@@ -1,3 +1,10 @@
+/*
+*
+* terminal.h | Terminal output
+* (c) The Lennox Project & Copy05 2023
+*
+*/
+
 #include "../basics.h"
 
 #define VGA_ADDR 0xB8000;

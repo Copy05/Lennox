@@ -1,3 +1,10 @@
+/*
+*
+* basics.h | Basic components for Lennox
+* (c) The Lennox Project & Copy05 2023
+*
+*/
+
 typedef unsigned char u8;
 typedef unsigned short u16;
 typedef unsigned int u32;

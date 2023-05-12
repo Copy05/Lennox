@@ -1,3 +1,11 @@
+/*
+*
+* Keyboard.c | The keyboard driver
+* (c) The Lennox Project & Copy05 2023
+*
+*/
+
+
 #include "../../basics.h"
 #include "keyboard.h"
 
@@ -24,15 +32,12 @@ char getkeycode()
 }
 
 void keyboard_handler(){
-	char character = 0;
-	char keycode = 0;
-
+	char c = 0;
+	
+	c = inb(KEYBOARD_PORT);
 	do {
-		keycode = getkeycode();
-		if(keycode == KEY_ENTER)
-			newline();
-		else
-			printchar(character);
-		_sleep(0x02FFFFFF);
-	} while (character > 0);
+		if(c > 0){
+			printchar(c);
+		}
+	} while (c != 1);
 }
