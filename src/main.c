@@ -5,11 +5,16 @@
 *
 */
 
-#include "basics.h"
-#include "utils/color.h"
-#include "terminal/terminal.h"
-#include "drivers/keyboard/keyboard.h"
-#include "utils/err.h"
+#include <Lennox/basics.h>
+#include <Lennox/color.h>
+#include <Lennox/terminal.h>
+#include <Lennox/drivers/keyboard.h>
+#include <Lennox/err.h>
+#include <Lennox/interrupt.h>
+
+// Keyboard Handling
+char buffer[256];
+u32 buf_pos = 0;
 
 int main(){
 	cls();
@@ -17,5 +22,7 @@ int main(){
 	newline();
 	_sleep(2000);
 	printt("Loaded", BRIGHT_GREEN);
+	newline();
+	interrupt(0x21, keyboard_handler);
 	return 0;
 }
