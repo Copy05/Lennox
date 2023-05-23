@@ -5,7 +5,7 @@
 *
 */
 
-#include <Lennox/basics.h>
+#include <Lennox/ctypes.h>
 #include <Lennox/terminal.h>
 
 u32 strlen(const char* str);

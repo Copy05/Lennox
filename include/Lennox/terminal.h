@@ -5,7 +5,7 @@
 *
 */
 
-#include <Lennox/basics.h>
+#include <Lennox/ctypes.h>
 
 #define VGA_ADDR 0xB8000;
 

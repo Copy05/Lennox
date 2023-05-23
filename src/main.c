@@ -5,7 +5,7 @@
 *
 */
 
-#include <Lennox/basics.h>
+#include <Lennox/ctypes.h>
 #include <Lennox/color.h>
 #include <Lennox/terminal.h>
 #include <Lennox/drivers/keyboard.h>

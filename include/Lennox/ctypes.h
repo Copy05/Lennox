@@ -1,6 +1,6 @@
 /*
 *
-* basics.h | Basic components for Lennox
+* ctypes.h | C Types for Lennox
 * (c) The Lennox Project & Copy05 2023
 *
 */

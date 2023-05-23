@@ -6,7 +6,7 @@
 */
 
 
-#include <Lennox/basics.h>
+#include <Lennox/ctypes.h>
 
 typedef void (*interrupt_t)(void);
 

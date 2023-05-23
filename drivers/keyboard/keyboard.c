@@ -6,7 +6,7 @@
 */
 
 
-#include <Lennox/basics.h>
+#include <Lennox/ctypes.h>
 #include <Lennox/drivers/keyboard.h>
 #include <Lennox/color.h>
 #include <Lennox/asm.h>

@@ -1,5 +1,13 @@
+/*
+*
+* asm.c | Assembly Functions
+* (c) The Lennox Project & Copy05 2023
+*
+*/
+
+
 #include <Lennox/asm.h>
-#include <Lennox/basics.h>
+#include <Lennox/ctypes.h>
 
 u8 inb(u16 port)
 {
